@@ -13,12 +13,16 @@
     margin: 0px;
 }
 
-#footer {
+.footer {
     font-size: 15px;
 }
 
 #dancodes-logo {
     max-width: 20px;
+}
+
+#TaTB-logo {
+    max-width: 40px;
 }
 
 .tac {
