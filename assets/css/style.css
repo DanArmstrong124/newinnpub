@@ -10,14 +10,22 @@
     text-align: center;
 }
 
-.parallax-home-beer-title {
-    color: white;
-    background-color: black;
+.links {
+    text-decoration: none !important;
+    color: red;
 }
 
-.parallax-home-beer-message {
+.links:hover {
+    color: red;
+}
+
+.parallax-home-beer-title {
     color: white;
-    background-color: black;
+    padding-top: 200px;
+}
+
+.display-clarity {
+    background-color: #000000c2;
 }
 
 .parallax-home-beer {
