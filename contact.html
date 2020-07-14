@@ -57,19 +57,19 @@
         <form>
             <div class="form-group">
                 <label for="name"><i class="fa fa-user-edit"></i> Full Name <i class="required-color">*</i></label>
-                <input type="name" class="form-control" id="name" placeholder="John Smith" required>
+                <input type="name" class="form-control" id="name" name="name" placeholder="John Smith" required>
             </div>
             <div class="form-group">
                 <label for="email"><i class="fa fa-at"></i> Email address <i class="required-color">*</i></label>
-                <input type="email" class="form-control" id="email" placeholder="johnsmith@yourmail.com" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="johnsmith@yourmail.com" required>
             </div>
             <div class="form-group">
                 <label for="phone"><i class="fa fa-phone"></i> Phone</label>
-                <input type="phone" class="form-control" id="phone" placeholder="01234 567890">
+                <input type="phone" class="form-control" id="phone" name="phone" placeholder="01234 567890">
             </div>
             <div class="form-group">
                 <label for="reasons"><i class="fa fa-question"></i> Reason <i class="required-color">*</i></label>
-                <select class="form-control reasons" id="reasons" required>
+                <select class="form-control reasons" id="reasons" name="reason" required>
                 <option disabled selected>Select One</option>
                 <option>Bookings</option>
                 <option>Complaint</option>
@@ -79,11 +79,11 @@
             </div>
             <div class="form-group hide" id="otherreasondiv">
                 <label for="otherreason"><i class="fa fa-caret-down"></i> Other Reason</label>
-                <input type="otherreason" class="form-control" id="otherreason" placeholder="Enter Reason">
+                <input type="otherreason" class="form-control" id="otherreason" name="otherreason" placeholder="Enter Reason">
             </div>
             <div class="form-group">
                 <label for="message"><i class="fa fa-pencil"></i> Message <i class="required-color">*</i></label>
-                <textarea class="form-control" id="message" rows="3" placeholder="To whom it may concern..." required></textarea>
+                <textarea class="form-control" id="message" rows="3" name="message" placeholder="To whom it may concern..." required></textarea>
             </div>
             <button style="width: 100%;" type="submit" class="btn btn-success">Submit <i class="fa fa-paper-plane"></i> </button>
         </form>
