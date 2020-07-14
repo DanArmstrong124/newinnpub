@@ -4,6 +4,15 @@
     display: none;
 }
 
+.required-color {
+    color: red;
+}
+
+.premove {
+    padding: 0px;
+    margin: 0px;
+}
+
 #footer {
     font-size: 15px;
 }
