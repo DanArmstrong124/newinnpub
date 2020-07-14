@@ -47,7 +47,39 @@
         </div>
     </nav>
 </header>
+
 <section>
+    <div class="col-xs-12 col-md-6 offset-md-3" style="margin-top: 50px; margin-bottom: 50px;">
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="name" class="form-control" id="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="johnsmith@yourmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="reasons">Reason</label>
+                <select class="form-control reasons" id="reasons" required>
+                <option disabled selected>Select One</option>
+                <option>Bookings</option>
+                <option>Complaint</option>
+                <option>Covid-19</option>
+                <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group hide" id="otherreasondiv">
+                <label for="otherreason">Other Reason</label>
+                <input type="otherreason" class="form-control" id="otherreason" placeholder="Enter Reason">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="To whom it may concern..." required></textarea>
+            </div>
+            <button type="button" class="btn btn-success">Submit</button>
+        </form>
+    </div>
 </section>
 
 <footer style="padding-top: 50px;">
@@ -59,5 +91,19 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+<script>
+$(document).ready(function(){
+    $("select.reasons").change(function(){
+        var selectedOption = $(this).children("option:selected").val();
+            if (selectedOption == "Other"){
+                $('#otherreasondiv').removeClass('hide');
+            }
+            if (selectedOption != "Other"){
+                $('#otherreasondiv').addClass('hide');
+            }
+    });
+});
+</script>
 </body>
 </html>

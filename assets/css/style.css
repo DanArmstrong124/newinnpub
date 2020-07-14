@@ -1,3 +1,9 @@
+/* INDEX AND GENERAL RULES */
+
+.hide {
+    display: none;
+}
+
 #footer {
     font-size: 15px;
 }
@@ -47,3 +53,5 @@
 .about-top-info {
     margin: 20px;
 }
+
+/* CONTACT PAGE */
